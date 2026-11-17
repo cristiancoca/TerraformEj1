@@ -1,0 +1,28 @@
+# Carpetas locales de plugins de Terraform (pesadas, se descargan con 'terraform init')
+**/.terraform/*
+
+# Archivos de estado local (contienen información sensible de tu infraestructura)
+*.tfstate
+*.tfstate.*
+
+# Archivos de registros de fallos (crash logs)
+crash.log
+crash.*.log
+
+# Archivos de variables con valores reales (pueden contener claves o datos privados)
+# Nota: Si quieres subir tu terraform.tfvars de práctica a GitHub, comenta las dos líneas de abajo con '#'
+*.tfvars
+*.tfvars.json
+
+# Archivos de planes guardados
+*.tfplan
+
+# Archivos de anulación local
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Configuraciones locales de la CLI
+.terraformrc
+terraform.rc
